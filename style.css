@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(255, 186, 57);
+}
+/* Default styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-side {
+    width: 70%; /* Adjust as needed */
+}
+
+.right-side {
+    width: 30%; /* Adjust as needed */
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card div {
+    width: 100%; /* Adjust as needed */
+    margin: 5px;
+    /* Add other styles as needed */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 455px) {
+    .card div {
+        font-size: .85rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .card div {
+        font-size: .75rem;
+    }
+} 
+/* Additional styling for buttons and input */
+.input, .inputButton, .hideButton {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.storage {
+    margin-bottom: 20px;
+}
+
+/* Adjust other styles as needed */
